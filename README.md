@@ -29,7 +29,7 @@ Part 2 -  Application - allows users to find different foods' nutrition informat
 3. (On Windows) Open the terminal(powershell), activate the virtual environment by typing `.venv/Scripts/activate`
 4. Navigate to the main solution folder by typing `cd NutriBullet` in the terminal
 5. Start the server with the command `py manage.py runserver` 
-6. Admin credentials - User: admin@admin.com; Password: Admin123*
+6. Admin credentials - User: Admin; Password: Admin123*
 
 
 

@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Foods
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="mb-4">Foods: {{food.food_type}}</h1>
+
+        <table id="tblData" class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for food in foods %}
+                <tr>
+                    <td><img style="width:30px;height:32px;" src="{{food.banner.url}}"></td>
+                    <td><b>{{food.name}}</b></td>
+                    <td>{{food.food_type}}</td>
+                    <td><a class="btn btn-outline-dark" href="{% url 'foods:page' food_type=food.food_type slug=food.slug %}">
+                        Details
+                    </a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock  %}

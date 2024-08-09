@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    <h1>Home Page</h1>
+
+    {% if user.is_authenticated %}
+        <h4 class="mt-3">Hello {{user}}, </h4>
+        <h4 class="mt-3 ms-4">Please select a food category:</h4>
+
+        <div class="row text-center mt-3">
+            <div class="col-3 m-4">
+                <a class="fs-4 link-secondary" href="/foods/MEAT" aria-label="MEAT" title="MEAT">
+                    🥩 MEAT
+                </a>
+            </div>
+            <div class="col-3 m-4">
+                <a class="fs-4 link-secondary" href="/foods/DAIRY" aria-label="DAIRY" title="DAIRY">
+                    🥛 DAIRY
+                </a>
+            </div>
+            <div class="col-3 m-4">
+                <a class="fs-4 link-secondary" href="/foods/FRUIT" aria-label="FRUITS" title="FRUITS">
+                    🍉 FRUITS
+                </a>
+            </div>
+            <div class="col-3 m-4">
+                <a class="fs-4 link-secondary" href="/foods/VEGETABLE" aria-label="VEGETABLES" title="VEGETABLES">
+                   🥕 VEGETABLES
+                </a>
+            </div>
+            <div class="col-3 m-4">
+                <a class="fs-4 link-secondary" href="/foods/GRAINS" aria-label="GRAINS" title="GRAINS">
+                    🌾 GRAINS 
+                </a>
+            </div>
+            <div class="col-3 m-4">
+                <a class="fs-4 link-secondary" href="/foods/NUTS" aria-label="NUTS" title="NUTS">
+                    🥜 NUTS
+                </a>
+            </div>
+            <div class="col-3 m-4">
+                <a class="fs-4 link-secondary" href="/foods/SUGAR" aria-label="SUGAR" title="SUGAR">
+                    🍬 SWEETS
+                </a>
+            </div>
+            <div class="col-3 m-4">
+                <a class="fs-4 link-secondary" href="/foods/BEVERAGES" aria-label="BEVERAGES" title="BEVERAGES">
+                    🍷 BEVERAGES
+                </a>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+
+    {% else %}
+        <h4>Please <a href="/users/login">login</a> to use our services</h4>
+    {% endif %}
+
+    
+    
+{% endblock  %}

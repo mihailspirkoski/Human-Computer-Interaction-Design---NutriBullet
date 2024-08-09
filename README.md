@@ -25,7 +25,7 @@ Part 2 -  Application - allows users to find different foods' nutrition informat
 **__Instructions__**
 
 1. Download or clone the repository (Download ZIP or `git clone` )
-2. Open the project solution folder (Part2 - NutriBullet) in your desired ide
+2. Open the project solution folder (Part2 - NutriBullet) in your desired IDE
 3. (On Windows) Open the terminal(powershell), activate the virtual environment by typing `.venv/Scripts/activate`
 4. Navigate to the main solution folder by typing `cd NutriBullet` in the terminal
 5. Start the server with the command `py manage.py runserver` 
